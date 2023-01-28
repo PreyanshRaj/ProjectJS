@@ -97,68 +97,106 @@
             });
         });
     </script>
+    <style>
+        body{
+            background: #ADD8E6;
+        }
+        .sec1 .sec2 .sec3 .sec4 .sec5 .sec6 .sec7{
+            width: 100%;
+            height: auto;
+            font-size: 50px;
+        }
+        p{
+            font-size: larger;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <?php include("C:\xampp\htdocs\VSWeb\index.php");
+    <?php include("C: mpp\htdocs\VSWeb\index.php");
     ?>
+    <h1>Project Management Portal.</h1>
     <!-- Manager Registration -->
-    <form id="registerForm" action="" method="POST">
-        <input type="text" name="name" placeholder="Name">
-        <input type="text" name="email" placeholder="Email">
-        <input type="password" name="password" placeholder="Password">
-        <input type="submit" name="register" value="Register">
-    </form>
+    <section class="sec1">
+        <p>Registration Section.</p>
+        <form id="registerForm" action="" method="POST">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="submit" name="register" value="Register">
+        </form>
+    </section>
 
     <!-- Manager Login -->
-    <form id="loginForm" action="" method="POST">
-        <input type="text" name="email" placeholder="Email">
-        <input type="password" name="password" placeholder="Password">
-        <input type="submit" name="login" value="Login">
-    </form>
+    <section class="sec2">
+        <p>Login Section.</p>
+        <form id="loginForm" action="" method="POST">
+            <input type="text" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="submit" name="login" value="Login">
+        </form>
+    </section>
 
     <!-- Add Project -->
-    <form id="addProjectForm" action="" method="POST">
-        <input type="text" name="project_name" placeholder="Project Name">
-        <input type="text" name="project_description" placeholder="Project Description">
-        <input type="file" name="project_prototype" placeholder="Project Prototype">
-        <input type="date" name="project_start_date" placeholder="Project Start Date">
-        <input type="date" name="project_deadline" placeholder="Project Deadline">
-        <input type="text" name="project_manager" placeholder="Project Manager">
-        <input type="text" name="project_developer" placeholder="Project Developer">
-        <input type="text" name="project_status" placeholder="Project Status">
-        <input type="submit" name="add_project" value="Add Project">
-    </form>
+    <section class="sec3">
+        <p>New Project addition Section.</p>
+        <form id="addProjectForm" action="" method="POST">
+            <input type="text" name="project_name" placeholder="Project Name">
+            <input type="text" name="project_description" placeholder="Project Description">
+            <input type="file" name="project_prototype" placeholder="Project Prototype">
+            <input type="date" name="project_start_date" placeholder="Project Start Date">
+            <input type="date" name="project_deadline" placeholder="Project Deadline">
+            <input type="text" name="project_manager" placeholder="Project Manager">
+            <input type="text" name="project_developer" placeholder="Project Developer">
+            <input type="text" name="project_status" placeholder="Project Status">
+            <input type="submit" name="add_project" value="Add Project">
+        </form>
+    </section>
 
     <!-- List of Projects -->
-    <form id="viewProjectsForm" action="" method="POST">
-        <input type="submit" name="view_projects" value="View Projects">
-    </form>
+    <section class="sec4">
+        <p>View Project Section.</p>
+        <form id="viewProjectsForm" action="" method="POST">
+            <input type="submit" name="view_projects" value="View Projects">
+        </form>
+    </section>
 
     <!-- Edit Project -->
-    <form id="editProjectForm" action="" method="POST">
-        <input type="text" name="project_id" placeholder="Project ID">
-        <input type="text" name="project_name" placeholder="Project Name">
-        <input type="text" name="project_description" placeholder="Project Description">
-        <input type="file" name="project_prototype" placeholder="Project Prototype">
-        <input type="date" name="project_start_date" placeholder="Project Start Date">
-        <input type="date" name="project_deadline" placeholder="Project Deadline">
-        <input type="text" name="project_manager" placeholder="Project Manager">
-        <input type="text" name="project_developer" placeholder="Project Developer">
-        <input type="text" name="project_status" placeholder="Project Status">
-        <input type="submit" name="edit_project" value="Edit Project">
-    </form>
+    <section class="sec5">
+        <p>Edit Project Section.</p>
+        <form id="editProjectForm" action="" method="POST">
+            <input type="text" name="project_id" placeholder="Project ID">
+            <input type="text" name="project_name" placeholder="Project Name">
+            <input type="text" name="project_description" placeholder="Project Description">
+            <input type="file" name="project_prototype" placeholder="Project Prototype">
+            <input type="date" name="project_start_date" placeholder="Project Start Date">
+            <input type="date" name="project_deadline" placeholder="Project Deadline">
+            <input type="text" name="project_manager" placeholder="Project Manager">
+            <input type="text" name="project_developer" placeholder="Project Developer">
+            <input type="text" name="project_status" placeholder="Project Status">
+            <input type="submit" name="edit_project" value="Edit Project">
+        </form>
+    </section>
 
     <!-- Delete Project -->
-    <form id="deleteProjectForm" action="" method="POST">
-        <input type="text" name="project_id" placeholder="Project ID">
-        <input type="submit" name="delete_project" value="Delete Project">
-    </form>
+    <section class="sec6">
+        <p>Project Deletion Section.</p>
+        <form id="deleteProjectForm" action="" method="POST">
+            <input type="text" name="project_id" placeholder="Project ID">
+            <input type="submit" name="delete_project" value="Delete Project">
+        </form>
+    </section>
 
     <!-- Change Project Status -->
-    <form id="changeProjectStatusForm" action="" method="POST">
-        <input type="text" name="project_id" placeholder="Project ID">
-        <input type="text" name="project_status" placeholder="Project Status">
-        <input type="submit" name="change_project_status" value="Change Project Status">
-    </form>
+    <section class="sec7">
+        <p>Project Changing Section.</p>
+        <form id="changeProjectStatusForm" action="" method="POST">
+            <input type="text" name="project_id" placeholder="Project ID">
+            <input type="text" name="project_status" placeholder="Project Status">
+            <input type="submit" name="change_project_status" value="Change Project Status">
+        </form>
+    </section>
 </body>
 </html>
